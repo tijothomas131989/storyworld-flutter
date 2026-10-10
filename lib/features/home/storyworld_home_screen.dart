@@ -13,10 +13,7 @@ class StoryWorldHomeScreen extends StatelessWidget {
           children: [
             Icon(Icons.auto_awesome, color: Color(0xFFC79A55)),
             SizedBox(width: 10),
-            Text(
-              'STORYWORLD',
-              style: TextStyle(letterSpacing: 2.0),
-            ),
+            Text('STORYWORLD', style: TextStyle(letterSpacing: 2.0)),
           ],
         ),
       ),
@@ -27,16 +24,15 @@ class StoryWorldHomeScreen extends StatelessWidget {
             Text(
               'Stories, brought to life.',
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.w700,
-                    color: const Color(0xFFF3E9D7),
-                  ),
+                fontWeight: FontWeight.w700,
+                color: const Color(0xFFF3E9D7),
+              ),
             ),
             const SizedBox(height: 8),
             Text(
               'A real-time cinematic world generated on your device.',
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: const Color(0xFFB1BDC8),
-                  ),
+              style: Theme.of(context).textTheme.bodyLarge
+                  ?.copyWith(color: const Color(0xFFB1BDC8)),
             ),
             const SizedBox(height: 26),
             Container(
@@ -57,7 +53,11 @@ class StoryWorldHomeScreen extends StatelessWidget {
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(Icons.landscape_outlined, size: 34, color: Color(0xFFD5AF70)),
+                  Icon(
+                    Icons.landscape_outlined,
+                    size: 34,
+                    color: Color(0xFFD5AF70),
+                  ),
                   SizedBox(height: 20),
                   Text(
                     'FIRST STORY',
@@ -99,7 +99,10 @@ class StoryWorldHomeScreen extends StatelessWidget {
                   children: [
                     const Row(
                       children: [
-                        Icon(Icons.developer_board_outlined, color: Color(0xFFD5AF70)),
+                        Icon(
+                          Icons.developer_board_outlined,
+                          color: Color(0xFFD5AF70),
+                        ),
                         SizedBox(width: 10),
                         Expanded(
                           child: Text(
@@ -115,10 +118,7 @@ class StoryWorldHomeScreen extends StatelessWidget {
                     const SizedBox(height: 8),
                     const Text(
                       'Backend selection is intentionally pending. This test screen is a scaffold, not a functioning 3D renderer.',
-                      style: TextStyle(
-                        color: Color(0xFFB1BDC8),
-                        height: 1.45,
-                      ),
+                      style: TextStyle(color: Color(0xFFB1BDC8), height: 1.45),
                     ),
                     const SizedBox(height: 16),
                     SizedBox(
@@ -178,10 +178,7 @@ class _PrincipleTile extends StatelessWidget {
     return ListTile(
       contentPadding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
       leading: Icon(icon, color: const Color(0xFFD5AF70)),
-      title: Text(
-        title,
-        style: const TextStyle(fontWeight: FontWeight.w600),
-      ),
+      title: Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
       subtitle: Text(
         subtitle,
         style: const TextStyle(color: Color(0xFFB1BDC8)),
