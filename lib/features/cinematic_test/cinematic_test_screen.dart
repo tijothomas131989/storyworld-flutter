@@ -15,7 +15,11 @@ class CinematicTestScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          const Icon(Icons.view_in_ar_outlined, size: 64, color: Color(0xFFD5AF70)),
+          const Icon(
+            Icons.view_in_ar_outlined,
+            size: 64,
+            color: Color(0xFFD5AF70),
+          ),
           const SizedBox(height: 20),
           Text(
             'Renderer not configured',
@@ -30,9 +34,18 @@ class CinematicTestScreen extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           _StatusRow(label: 'Backend', value: status.label),
-          const _StatusRow(label: 'GPU scene', value: 'Not implemented'),
-          const _StatusRow(label: 'Physical device validation', value: 'Not performed'),
-          const _StatusRow(label: 'Performance metrics', value: 'Unavailable'),
+          const _StatusRow(
+            label: 'GPU scene',
+            value: 'Not implemented',
+          ),
+          const _StatusRow(
+            label: 'Physical device validation',
+            value: 'Not performed',
+          ),
+          const _StatusRow(
+            label: 'Performance metrics',
+            value: 'Unavailable',
+          ),
           const SizedBox(height: 24),
           const Text(
             'Next acceptance gate',
@@ -62,7 +75,12 @@ class _StatusRow extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(child: Text(label, style: const TextStyle(color: Color(0xFFB1BDC8)))),
+          Expanded(
+            child: Text(
+              label,
+              style: const TextStyle(color: Color(0xFFB1BDC8)),
+            ),
+          ),
           const SizedBox(width: 16),
           Expanded(
             child: Text(

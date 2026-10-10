@@ -13,7 +13,10 @@ class StoryWorldHomeScreen extends StatelessWidget {
           children: [
             Icon(Icons.auto_awesome, color: Color(0xFFC79A55)),
             SizedBox(width: 10),
-            Text('STORYWORLD', style: TextStyle(letterSpacing: 2.0)),
+            Text(
+              'STORYWORLD',
+              style: TextStyle(letterSpacing: 2.0),
+            ),
           ],
         ),
       ),
@@ -43,7 +46,11 @@ class StoryWorldHomeScreen extends StatelessWidget {
                 gradient: const LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Color(0xFF34404A), Color(0xFF151C23), Color(0xFF211A12)],
+                  colors: [
+                    Color(0xFF34404A),
+                    Color(0xFF151C23),
+                    Color(0xFF211A12),
+                  ],
                 ),
                 border: Border.all(color: const Color(0xFF4B463A)),
               ),
@@ -97,7 +104,10 @@ class StoryWorldHomeScreen extends StatelessWidget {
                         Expanded(
                           child: Text(
                             'Rendering foundation',
-                            style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
                       ],
@@ -105,7 +115,10 @@ class StoryWorldHomeScreen extends StatelessWidget {
                     const SizedBox(height: 8),
                     const Text(
                       'Backend selection is intentionally pending. This test screen is a scaffold, not a functioning 3D renderer.',
-                      style: TextStyle(color: Color(0xFFB1BDC8), height: 1.45),
+                      style: TextStyle(
+                        color: Color(0xFFB1BDC8),
+                        height: 1.45,
+                      ),
                     ),
                     const SizedBox(height: 16),
                     SizedBox(
@@ -165,8 +178,14 @@ class _PrincipleTile extends StatelessWidget {
     return ListTile(
       contentPadding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
       leading: Icon(icon, color: const Color(0xFFD5AF70)),
-      title: Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
-      subtitle: Text(subtitle, style: const TextStyle(color: Color(0xFFB1BDC8))),
+      title: Text(
+        title,
+        style: const TextStyle(fontWeight: FontWeight.w600),
+      ),
+      subtitle: Text(
+        subtitle,
+        style: const TextStyle(color: Color(0xFFB1BDC8)),
+      ),
     );
   }
 }
